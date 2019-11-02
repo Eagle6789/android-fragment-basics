@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.codepath.mypizza.R;
 import com.codepath.mypizza.data.Pizza;
@@ -33,7 +34,7 @@ public class PizzaDetailFragment extends Fragment {
 
   @Override
   public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup parent, @Nullable Bundle savedInstanceState) {
-
+    Toast.makeText(getActivity(), "onCreateView", Toast.LENGTH_LONG).show();
     // Inflate the xml file for the fragment
     return inflater.inflate(R.layout.fragment_pizza_detail, parent, false);
   }
